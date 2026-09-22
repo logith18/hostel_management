@@ -1,6 +1,7 @@
 package com.hostel.model;
 
 import java.time.LocalDate;
+import java.time.Clock;
 
 public class Fine {
 
@@ -19,7 +20,7 @@ public class Fine {
         this.reason = reason;
         this.amount = amount;
         this.status = "PENDING";
-        this.fineDate = LocalDate.now();
+        this.fineDate = LocalDate.now(Clock.systemDefaultZone());
     }
 
     public String getFineId() {
