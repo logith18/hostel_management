@@ -12,6 +12,7 @@
 
     <properties>
         <maven.compiler.release>21</maven.compiler.release>
+        <sonar.organization>logith18</sonar.organization>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.11.4</junit.version>
         <jacoco.version>0.8.12</jacoco.version>
