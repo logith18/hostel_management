@@ -22,7 +22,7 @@ public class PaymentService {
             return false;
         }
 
-        if (amount <= 0) {
+        if (!Double.isFinite(amount) || amount <= 0) {
             return false;
         }
 
