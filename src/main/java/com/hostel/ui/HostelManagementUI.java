@@ -29,6 +29,9 @@ import java.util.Scanner;
 public class HostelManagementUI {
 
     private static final Scanner scanner = new Scanner(System.in);
+    private static final String MENU_SEPARATOR =
+            "----------------------------------------------";
+    private static final String STUDENT_ID_PROMPT = "Student ID: ";
 
     // DAOs
     private static final StudentDAO studentDAO = new StudentDAO();
@@ -163,9 +166,9 @@ public class HostelManagementUI {
     private static void displayMenu() {
 
         System.out.println();
-        System.out.println("----------------------------------------------");
+        System.out.println(MENU_SEPARATOR);
         System.out.println("              MAIN MENU");
-        System.out.println("----------------------------------------------");
+        System.out.println(MENU_SEPARATOR);
 
         System.out.println("1.  Register Student");
         System.out.println("2.  Add Room");
@@ -183,14 +186,14 @@ public class HostelManagementUI {
         System.out.println("14. Mark Fine as Paid");
         System.out.println("15. Exit");
 
-        System.out.println("----------------------------------------------");
+        System.out.println(MENU_SEPARATOR);
     }
 
     private static void registerStudent() {
 
         System.out.println("\n===== STUDENT REGISTRATION =====");
 
-        String id = readString("Student ID: ");
+        String id = readString(STUDENT_ID_PROMPT);
         String name = readString("Name: ");
         String department = readString("Department: ");
         int year = readInt("Year: ");
@@ -295,7 +298,7 @@ public class HostelManagementUI {
         System.out.println("\n===== ROOM ALLOCATION =====");
 
         String studentId =
-                readString("Student ID: ");
+                readString(STUDENT_ID_PROMPT);
 
         String roomNumber =
                 readString("Room number: ");
@@ -316,7 +319,7 @@ public class HostelManagementUI {
         System.out.println("\n===== ROOM TRANSFER =====");
 
         String studentId =
-                readString("Student ID: ");
+                readString(STUDENT_ID_PROMPT);
 
         String newRoom =
                 readString("New room number: ");
@@ -332,7 +335,7 @@ public class HostelManagementUI {
         System.out.println("\n===== FINE CALCULATION =====");
 
         String studentId =
-                readString("Student ID: ");
+                readString(STUDENT_ID_PROMPT);
 
         String fineId =
                 readString("Fine ID: ");
@@ -362,7 +365,7 @@ public class HostelManagementUI {
         System.out.println("\n===== PAYMENT =====");
 
         String studentId =
-                readString("Student ID: ");
+                readString(STUDENT_ID_PROMPT);
 
         String paymentId =
                 readString("Payment ID: ");
@@ -389,7 +392,7 @@ public class HostelManagementUI {
                 readString("Complaint ID: ");
 
         String studentId =
-                readString("Student ID: ");
+                readString(STUDENT_ID_PROMPT);
 
         String description =
                 readString("Description: ");
@@ -423,7 +426,7 @@ public class HostelManagementUI {
         System.out.println("\n===== STUDENT CHECKOUT =====");
 
         String studentId =
-                readString("Student ID: ");
+                readString(STUDENT_ID_PROMPT);
 
         boolean pendingPayment =
                 readYesNo("Pending payment? (yes/no): ");
@@ -472,7 +475,7 @@ public class HostelManagementUI {
         System.out.println("\n===== STUDENT PAYMENTS =====");
 
         String studentId =
-                readString("Student ID: ");
+                readString(STUDENT_ID_PROMPT);
 
         List<Payment> payments =
                 paymentService.getPayments(studentId);

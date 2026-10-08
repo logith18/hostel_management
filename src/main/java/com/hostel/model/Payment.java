@@ -1,6 +1,7 @@
 package com.hostel.model;
 
 import java.time.LocalDate;
+import java.time.Clock;
 
 public class Payment {
 
@@ -19,7 +20,7 @@ public class Payment {
         this.amount = amount;
         this.paymentType = paymentType;
         this.status = "PAID";
-        this.paymentDate = LocalDate.now();
+        this.paymentDate = LocalDate.now(Clock.systemDefaultZone());
     }
 
     public String getPaymentId() {

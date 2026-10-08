@@ -1,0 +1,20 @@
+{
+  "project": "Hostel Management System with Dynamic Room Allocation and Fine Calculation",
+  "metrics": {
+    "RARD": {
+      "name": "Room Allocation Rule Density",
+      "formula": "allocation decision rules / RoomAllocationService LOC",
+      "rules": 7,
+      "loc": 66,
+      "value": 0.1061,
+      "loc_convention": "non-comment, non-blank physical lines (fallback)"
+    },
+    "HCCI": {
+      "name": "Hostel Checkout Complexity Index",
+      "formula": "checkout decision conditions / checkout operations",
+      "conditions": 8,
+      "operations": 5,
+      "value": 1.6
+    }
+  }
+}
