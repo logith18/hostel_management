@@ -1,6 +1,5 @@
 package com.hostel.model;
-
-import java.time.LocalDate;
+import java.time.Clock;
 
 public class Complaint {
 
@@ -17,7 +16,7 @@ public class Complaint {
         this.studentId = studentId;
         this.description = description;
         this.status = "OPEN";
-        this.complaintDate = LocalDate.now();
+        LocalDate.now(Clock.systemDefaultZone());
     }
 
     public String getComplaintId() {

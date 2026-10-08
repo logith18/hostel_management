@@ -1,6 +1,6 @@
 package com.hostel.model;
 
-import java.time.LocalDate;
+import java.time.Clock;
 
 public class Allocation {
 
@@ -14,7 +14,7 @@ public class Allocation {
         this.allocationId = allocationId;
         this.studentId = studentId;
         this.roomNumber = roomNumber;
-        this.allocationDate = LocalDate.now();
+        LocalDate.now(Clock.systemDefaultZone());
         this.status = "ACTIVE";
     }
 
