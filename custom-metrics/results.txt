@@ -1,0 +1,21 @@
+========================================
+HOSTEL MANAGEMENT SYSTEM
+CUSTOM SOFTWARE METRICS
+========================================
+
+Room Allocation Rule Density (RARD)
+----------------------------------------
+Allocation decision rules : 7
+RoomAllocationService LOC : 66
+RARD = 7 / 66 = 0.1061
+
+Hostel Checkout Complexity Index (HCCI)
+----------------------------------------
+Checkout decision conditions : 8
+Checkout workflow operations : 5
+HCCI = 8 / 5 = 1.60
+
+RARD interpretation: higher values indicate more allocation rules
+concentrated within a relatively small amount of code.
+HCCI interpretation: higher values indicate more checkout
+decision-making conditions per checkout workflow operation.
