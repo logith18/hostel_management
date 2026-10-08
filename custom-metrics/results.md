@@ -12,8 +12,8 @@ Hostel Management System with Dynamic Room Allocation and Fine Calculation
 | Input | Value |
 |---|---:|
 | Room-allocation decision rules | 7 |
-| RoomAllocationService LOC | 66 |
-| RARD | **0.1061** |
+| RoomAllocationService LOC | 96 |
+| RARD | **0.0729** |
 
 The seven rules are student existence, hostel eligibility, active-allocation check, room existence, room availability, room capacity, and preferred room-type matching.
 

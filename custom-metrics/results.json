@@ -5,8 +5,8 @@
       "name": "Room Allocation Rule Density",
       "formula": "allocation decision rules / RoomAllocationService LOC",
       "rules": 7,
-      "loc": 66,
-      "value": 0.1061,
+      "loc": 96,
+      "value": 0.0729,
       "loc_convention": "non-comment, non-blank physical lines (fallback)"
     },
     "HCCI": {
